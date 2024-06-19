@@ -1,10 +1,11 @@
-package com.capstone.agrovision
+package com.capstone.agrovision.view
 
 import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import androidx.appcompat.app.AppCompatActivity
+import com.capstone.agrovision.R
 
 class SplashscreenActivity : AppCompatActivity() {
 
@@ -15,7 +16,7 @@ class SplashscreenActivity : AppCompatActivity() {
         setContentView(R.layout.activity_splashscreen)
 
         Handler(Looper.getMainLooper()).postDelayed({
-            val intent = Intent(this, LoginActivity::class.java)
+            val intent = Intent(this, LandingPageActivity::class.java)
             startActivity(intent)
             finish()
         }, splashScreenDuration)
